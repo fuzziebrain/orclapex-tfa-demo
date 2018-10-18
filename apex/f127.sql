@@ -27,7 +27,7 @@ prompt APPLICATION 127 - Two-Factor Authentication Demo
 -- Application Export:
 --   Application:     127
 --   Name:            Two-Factor Authentication Demo
---   Date and Time:   18:20 Wednesday October 17, 2018
+--   Date and Time:   23:41 Wednesday October 17, 2018
 --   Exported By:     APNG
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -114,7 +114,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'2FA Demo'
 ,p_last_updated_by=>'APNG'
-,p_last_upd_yyyymmddhh24miss=>'20181017182004'
+,p_last_upd_yyyymmddhh24miss=>'20181017234044'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>4
 ,p_ui_type_name => null
@@ -11054,7 +11054,7 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_protection_level=>'C'
 ,p_last_updated_by=>'APNG'
-,p_last_upd_yyyymmddhh24miss=>'20181017171659'
+,p_last_upd_yyyymmddhh24miss=>'20181017234043'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1728017097795926)
@@ -11167,7 +11167,7 @@ wwv_flow_api.create_page_process(
 ,p_process_sequence=>10
 ,p_process_point=>'AFTER_SUBMIT'
 ,p_process_type=>'NATIVE_PLSQL'
-,p_process_name=>'verifyOTP'
+,p_process_name=>'finalizeLogin'
 ,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
 'apex_authentication.post_login(',
 '  p_username => :P10000_USERNAME',
