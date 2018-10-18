@@ -27,7 +27,7 @@ prompt APPLICATION 127 - Two-Factor Authentication Demo
 -- Application Export:
 --   Application:     127
 --   Name:            Two-Factor Authentication Demo
---   Date and Time:   23:41 Wednesday October 17, 2018
+--   Date and Time:   00:25 Thursday October 18, 2018
 --   Exported By:     APNG
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -114,7 +114,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'2FA Demo'
 ,p_last_updated_by=>'APNG'
-,p_last_upd_yyyymmddhh24miss=>'20181017234044'
+,p_last_upd_yyyymmddhh24miss=>'20181018002434'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>4
 ,p_ui_type_name => null
@@ -10670,7 +10670,7 @@ wwv_flow_api.create_page(
 ,p_required_role=>'MUST_NOT_BE_PUBLIC_USER'
 ,p_protection_level=>'C'
 ,p_last_updated_by=>'APNG'
-,p_last_upd_yyyymmddhh24miss=>'20181016163915'
+,p_last_upd_yyyymmddhh24miss=>'20181018002434'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1725891648795904)
@@ -10761,7 +10761,7 @@ wwv_flow_api.create_page_item(
 ,p_cMaxlength=>6
 ,p_field_template=>wwv_flow_api.id(1632927928533491)
 ,p_item_template_options=>'#DEFAULT#'
-,p_attribute_03=>'right'
+,p_attribute_03=>'center'
 );
 wwv_flow_api.create_page_item(
  p_id=>wwv_flow_api.id(1726129601795907)
@@ -11054,13 +11054,13 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'Y'
 ,p_protection_level=>'C'
 ,p_last_updated_by=>'APNG'
-,p_last_upd_yyyymmddhh24miss=>'20181017234043'
+,p_last_upd_yyyymmddhh24miss=>'20181018002303'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1728017097795926)
 ,p_plug_name=>'Verification Code'
-,p_region_template_options=>'#DEFAULT#'
-,p_plug_template=>wwv_flow_api.id(1580394059533443)
+,p_region_template_options=>'#DEFAULT#:t-Region--removeHeader:t-Region--noBorder:t-Region--scrollBody:t-Form--xlarge:t-Form--stretchInputs'
+,p_plug_template=>wwv_flow_api.id(1580802185533444)
 ,p_plug_display_sequence=>10
 ,p_include_in_reg_disp_sel_yn=>'Y'
 ,p_plug_display_point=>'BODY'
@@ -11112,11 +11112,11 @@ wwv_flow_api.create_page_item(
 ,p_item_sequence=>10
 ,p_item_plug_id=>wwv_flow_api.id(1728017097795926)
 ,p_use_cache_before_default=>'NO'
-,p_prompt=>'Verification Code'
+,p_prompt=>'Please enter the verification code from your security application:'
 ,p_display_as=>'NATIVE_NUMBER_FIELD'
 ,p_cSize=>30
 ,p_cMaxlength=>6
-,p_field_template=>wwv_flow_api.id(1632306297533489)
+,p_field_template=>wwv_flow_api.id(1632845963533491)
 ,p_item_template_options=>'#DEFAULT#'
 ,p_protection_level=>'I'
 ,p_encrypt_session_state_yn=>'Y'
