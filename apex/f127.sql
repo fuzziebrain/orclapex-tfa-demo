@@ -27,7 +27,7 @@ prompt APPLICATION 127 - Two-Factor Authentication Demo
 -- Application Export:
 --   Application:     127
 --   Name:            Two-Factor Authentication Demo
---   Date and Time:   13:30 Saturday June 1, 2019
+--   Date and Time:   13:32 Saturday June 1, 2019
 --   Exported By:     ADMIN
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -82,7 +82,7 @@ wwv_flow_api.create_flow(
  p_id=>wwv_flow.g_flow_id
 ,p_owner=>nvl(wwv_flow_application_install.get_schema,'KSCOPE19')
 ,p_name=>nvl(wwv_flow_application_install.get_application_name,'Two-Factor Authentication Demo')
-,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'TFADEMO127')
+,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'TFADEMO')
 ,p_page_view_logging=>'YES'
 ,p_page_protection_enabled_y_n=>'Y'
 ,p_checksum_salt=>'6A41957EE5974945CF0714E4FA11F463613E289F7360B1BFEF368F3D40404CEC'
@@ -113,7 +113,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'2FA Demo'
 ,p_last_updated_by=>'ADMIN'
-,p_last_upd_yyyymmddhh24miss=>'20190601132739'
+,p_last_upd_yyyymmddhh24miss=>'20190601133210'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>4
 ,p_ui_type_name => null
